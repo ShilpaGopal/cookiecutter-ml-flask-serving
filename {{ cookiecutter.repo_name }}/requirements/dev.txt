@@ -1,0 +1,11 @@
+-r common.txt
+click~=7.1.2
+Sphinx
+coverage
+awscli
+flake8
+pytest~=5.4.3
+matplotlib~=3.2.2
+pandas~=1.0.5
+emnist~=0.0
+Pillow~=7.2.0
