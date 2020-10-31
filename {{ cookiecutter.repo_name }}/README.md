@@ -81,6 +81,8 @@ Replace listed variables across the project
 <SERVICE-NAME> # Project wide search and replace
 <SERVICE-SHORT-NAME> # in app/constants/constants.py
 <SERVICE-PREFIX> # in app.py and Makefile
+<MODEL_WEIGHTS_FILE> # in Makefile
+<TAG> # in Makefile
 ```
 ### Logging format
 ----------------
@@ -105,4 +107,10 @@ ERROR log
 "req_id": "a121b432-ed27-11ea-adc1-0242ac120002", 
 "error": "Internal server error", 
 "nested_error": "<Stack Trace>"}
+```
+
+Start the service 
+
+```
+make serve
 ```
