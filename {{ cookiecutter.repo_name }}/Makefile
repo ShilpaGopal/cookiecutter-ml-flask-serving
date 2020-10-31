@@ -3,7 +3,7 @@
 OUTPUT=tests/data/predictions.json
 INPUT=tests/data/input.json
 PORT=8000
-ENDPOINT=http://localhost:${PORT}/ocr/v1/predict
+ENDPOINT=http://localhost:${PORT}/<SERVICE-PREFIX>/v1/predict
 ENV-DEV=build/docker/env_dev.env
 
 

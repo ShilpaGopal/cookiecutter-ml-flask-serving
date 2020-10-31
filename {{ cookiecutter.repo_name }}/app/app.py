@@ -11,13 +11,13 @@ logger = get_logger(LOGGER_CONFIG)
 model = model.load(logger)
 
 
-@app.route('/ocr/health', methods=['GET'])
+@app.route('/<SERVICE-PREFIX>/health', methods=['GET'])
 def health():
     res = {"message": "I am alive"}
     return Response(json.dumps(res), 200, mimetype='application/json')
 
 
-@app.route('/ocr/v1/predict', methods=['POST'])
+@app.route('/<SERVICE-PREFIX>/v1/predict', methods=['POST'])
 def predict():
     req = HTTPHandler(request.get_json(), request.headers.get('X-Request-ID'))
 
